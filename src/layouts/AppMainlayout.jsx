@@ -3,7 +3,7 @@ import AppNavbar from "../component/AppNavbar";
 import CardRightSide from "../component/CardRightSide";
 import AppFooter from "../component/AppFooter";
 
-export default function Mainlayout() {
+export default function AppMainlayout() {
   return (
     <>
       <AppNavbar />

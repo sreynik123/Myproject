@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter,RouterProvider } from "react-router";
 
-import Mainlayout from "./layouts/mainlayout";
+import AppMainlayout from"./layouts/AppMainlayout.jsx"
 import Home1 from "./page/Home1";
 import People from "./page/People";
 import LogIn from "./page/LogIn";
@@ -20,7 +20,7 @@ import { Provider } from "react-redux";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Mainlayout />,
+    element: <AppMainlayout/>,
     children: [
       {
         path: "/",
