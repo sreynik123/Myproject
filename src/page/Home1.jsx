@@ -33,7 +33,7 @@ export default function Home1() {
       <ul className=" bg-white p-5   grid gap-x-8 gap-y-10 mt-16 sm:grid-cols-2 lg:grid-cols-3 shadow-2xl">
         {data.results &&
           data.results.map((movie) => (
-            <li className="w-full mx-auto group sm:max-w-sm" >
+            <li className="w-full mx-auto group sm:max-w-sm hover:text-blue-800" >
               <a href="#">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
