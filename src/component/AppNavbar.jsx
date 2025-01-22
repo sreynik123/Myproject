@@ -15,7 +15,7 @@ const AvatarMenue = () => {
 
   useEffect(() => {
     const handleDropDown = (e) => {
-      if (!profileRef.current.contains(e.target)) setState(false);
+      // if (!profileRef.current.contains(e.target)) setState(false);
     };
     document.addEventListener("click", handleDropDown);
   }, []);
@@ -70,7 +70,7 @@ export default function AppNavbar() {
     { title: "Login", path: "/Login" },
     { title: "AboutUs", path: "/AboutUs" },
     { title: "MovieDetail", path: "/MovieDetail" },
-  ];
+      ];
 
   const submenuNav = [
     { title: "Overview", path: "javascript:void(0)" },

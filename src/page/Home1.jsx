@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { useEffect } from "react";
 import { fetchMovie } from "../features/movie/movieAction";
-import Appbutton from "../component/Appbutton"
+
 import { decrement, increment } from "../features/counter/CounterSilce";
+import Appbutton from "../component/appbutton";
 
 export default function Home1() {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ export default function Home1() {
   return (
     <main>
       <div className=" px-4 py-2  grid grid-cols-2 gap-2 p-4 bg-white ">
-        <Appbutton onClick={onIncreasement} icon={<FaPlus />} />
+        <Appbutton   onClick={onIncreasement} icon={<FaPlus />} />
         <Appbutton onClick={onDecresement} icon={<FaMinus />} />
       </div>
       <hr />
