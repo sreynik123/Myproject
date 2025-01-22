@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { fetchMovie } from "../features/movie/movieAction";
 
 import { decrement, increment } from "../features/counter/CounterSilce";
-import Appbutton from "../component/appbutton";
+import Appbutton from "../component/Myappbutton";
 
 export default function Home1() {
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ export default function Home1() {
     dispatch(fetchMovie())
   }, [])
 
-  function onIncreasement() {
+  function onIncreasement() {S
     console.log("Increasement")
     dispatch(increment())
   }
