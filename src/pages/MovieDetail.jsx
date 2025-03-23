@@ -10,14 +10,14 @@ export default function MovieDetail() {
   useEffect(() => {
     console.log("Movie Detail UseEffect");
     dispatch(fetchMovieDatail(params.id));
-    console.log ()
+    console.log (detail)
   }, []);
 
  
   return (
     <section
     style={{
-      backgroundImage:`url(https://image.tmdb.org/t/p/w1066_and_h600/${detail.backdrop_path})`
+      backgroundImage:`url(https://media.themoviedb.org/t/t/w1066_and_h600_bestv2${detail.backdrop_path})`
     }}
     
     
